@@ -1,0 +1,220 @@
+header {
+    position: relative;
+    border-bottom: 1px solid $border-header-color;
+}
+
+
+.conteiner__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+}
+
+// Navigation
+.site-nav {
+    margin-bottom: auto;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        // margin-left: 93px; 
+    }
+    // display: flex;
+    // align-items: center;
+    // margin-left: 93px; 
+}
+
+.site-nav__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $title-text-color;
+    transition: $transition-color-effect;
+
+    
+    @media screen and (max-width: 767px) {
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.site-nav__link--current {
+     color: $accent-color;
+
+     &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            margin-bottom: -1px;
+    
+            width: 100%;
+            height: 4px;
+            background-color: $accent-color;
+            border-radius: 2px;
+
+            @media screen and (max-width: 767px) {
+                display: none;
+            }
+        }
+}
+
+.site-nav__item {
+    // margin-right: 50px;
+
+    &:not(:last-child) {
+        @media screen and (min-width:767px) {
+            margin-right: 50px;    
+        }
+    }
+}
+
+.menu-button {
+    z-index: 500;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;        
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.header-logo {
+    display: block;
+}
+
+.menu-nav {
+    &.is-open {
+        display: block;
+    }
+
+    @media screen and (max-width:767px) {
+        display: none;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100vw;   
+        height: 100vh;
+
+        background-color: $text-title-hero;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;  
+    }
+}
+
+// Contacts
+.contacts__head {
+    // display: flex;
+    // align-items: center;    
+    // margin-left: auto;
+
+
+    @media screen and (max-width: 767px) {
+        // display: inline-flex;
+        // flex-direction: column-reverse;
+        padding-left: 20px;
+        margin-bottom: 60px;
+
+        a[href="tel:+380961111111"] {
+            color: $accent-color    ;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:1170px) {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-left: 305px;
+
+        & a[href="mailto:info@devstudio.com"] {
+            margin-right: 30px;
+        }
+    }
+}   
+
+.contacts__link {
+    color: $primery-text-color;
+    transition: $transition-color-effect;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+
+.contacts__item {
+    @media screen and (max-width:767px) {
+        text-align: start;
+    }
+
+    &:not(:first-child) {
+        @media screen and (min-width:768px)
+        and (max-width:1169px)  {
+            margin-bottom: 10px;
+        }
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width:767px) {
+            margin-right: 50px;
+        }   
+    }
+
+    @media screen and (min-width:768px) 
+    and (max-width:1169px) {
+        margin-left: 84px;
+    }
+}
+
+.contacts__icon {
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: $primery-text-color;
+    transition: $transition-fill-effect;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    .contacts__item:hover &,
+    .contacts__item:focus & {
+        fill: $accent-color;
+    }
+}
+

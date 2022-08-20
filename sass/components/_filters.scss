@@ -1,0 +1,22 @@
+.filters-btn__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (min-width:1170px) {
+        margin-bottom: 50px;
+    }
+}
+
+.filters-btn__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filters-btn__item:first-child {
+    margin-bottom: 21px;
+}

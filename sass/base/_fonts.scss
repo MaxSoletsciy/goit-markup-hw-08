@@ -1,0 +1,184 @@
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 00.03em;
+}
+
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17em;
+}
+
+.site-nav {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts__head {
+    & a[href="mailto:info@devstudio.com"] {
+        @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+}
+.contacts__head a {
+    @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+        }
+
+    @media screen and (min-width: 1170px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        }
+}
+
+.site-nav__link {
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+    }
+}
+
+.networks__list--menu .menu__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+}
+
+
+
+.hero__title {
+    font-weight: 900;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 44px;
+
+    @media screen and (max-width: 1169px) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;    
+    }
+}
+
+.button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}   
+
+.features__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features__article {
+    line-height: 1.71;
+}
+
+.employments__article {
+    font-family: 'Roboto';
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.team__title {
+    @extend %section-title-h2;
+}
+
+.team__title--employee {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team__article {
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+%footer__article {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-title-hero;
+}
+
+.button-filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.card-set__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.card-set__article {
+    color: $primery-text-color;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+.overlay__article {
+    color: $text-title-hero;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+}
+
+.modal-form__title {
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.modal-form__textarea::placeholder {
+    color: $textarea-placeholder-color;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;    
+}

@@ -1,0 +1,45 @@
+.subscribe {
+    @media screen and (min-width:1170px) {
+        width: 570px;
+    }
+}
+
+.subscribe__article {
+    @extend %footer__article;
+
+    display: block;
+    text-align: center;
+}
+
+.subscribe__input {
+    padding: 15px;
+    margin-top: 20px;
+    // margin-right: 12px;
+    // width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    background-color: var(--background-footer-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    .subscribe__input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:1170px) {
+        width: 358px;
+    }
+}

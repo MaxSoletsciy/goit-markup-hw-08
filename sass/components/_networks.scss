@@ -1,0 +1,100 @@
+// зробити плейсхолдер
+.networks__list {
+    display: flex;
+    justify-content: center;
+}
+.networks__list--menu {
+    display: flex;
+    justify-content: flex-start;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.networks__list--menu .menu__item:not(:last-child) {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        right: -10px;
+        height: 100%;
+        // width: 4px;
+        // background-color: black;
+        border-radius: 2px;
+        border: $border-form-input;
+    }
+}
+
+.menu__item {
+    padding-left: 20px; 
+}
+
+.networks__list--menu .menu__link {
+    vertical-align: middle;
+}
+
+.networks__list--team {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-bottom: 24px;
+}
+
+.networks__list--footer {
+    margin-top: 20px;
+}
+
+.networks__item {
+    width: 44px;
+	height: 44px;
+
+    &--footer:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.networks__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+    transition: $transition-bgc-effect;
+}
+
+.networks__link--team {
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.networks__link--footer {
+    background-color: $footer-bgc-icon-network;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.networks__icon {
+    fill: $icon-color;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    
+    &:hover,
+    &:focus {
+        fill: $text-title-hero;
+    }
+
+    transition: $transition-fill-effect;
+}
+
+.networks__icon--footer {
+    fill: $text-title-hero;
+}
