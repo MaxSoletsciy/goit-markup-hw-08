@@ -23,6 +23,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px red solid;
 }
 @media screen and (max-width: 767px) {
   .conteiner {
@@ -302,7 +303,7 @@ body {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   padding: 10px 32px;
   margin-right: auto;
   margin-left: auto;
