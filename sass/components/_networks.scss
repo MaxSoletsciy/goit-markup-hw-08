@@ -5,7 +5,7 @@
 }
 .networks__list--menu {
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 
     @media screen and (min-width:768px) {
         display: none;
@@ -30,7 +30,8 @@
 }
 
 .menu__item {
-    padding-left: 20px; 
+    padding-left: 20px;
+    margin-bottom: 10px; 
 }
 
 .networks__list--menu .menu__link {

@@ -9,6 +9,10 @@
 
     display: block;
     text-align: center;
+
+    @media screen and (min-width: 1170px) {
+        text-align: start;
+    }
 }
 
 .subscribe__input {
@@ -35,11 +39,12 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) and (max-width: 1169px) {
+        display: block;
         width: 450px;
     }
 
-    @media screen and (min-width:1170px) {
+    @media screen and (min-width: 1170px) {
         width: 358px;
     }
 }

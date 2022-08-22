@@ -19,9 +19,6 @@ header {
         align-items: center;
         // margin-left: 93px; 
     }
-    // display: flex;
-    // align-items: center;
-    // margin-left: 93px; 
 }
 
 .site-nav__link {
@@ -70,8 +67,6 @@ header {
 }
 
 .site-nav__item {
-    // margin-right: 50px;
-
     &:not(:last-child) {
         @media screen and (min-width:767px) {
             margin-right: 50px;    
@@ -134,14 +129,7 @@ header {
 
 // Contacts
 .contacts__head {
-    // display: flex;
-    // align-items: center;    
-    // margin-left: auto;
-
-
     @media screen and (max-width: 767px) {
-        // display: inline-flex;
-        // flex-direction: column-reverse;
         padding-left: 20px;
         margin-bottom: 60px;
 
@@ -191,7 +179,7 @@ header {
     }
 
     &:not(:last-child) {
-        @media screen and (max-width:767px) {
+        @media screen and (min-width: 480px) and (max-width:767px) {
             margin-right: 50px;
         }   
     }
