@@ -11,6 +11,7 @@ body.no-scroll-modal {
 .backdrop {
     position: fixed;
     z-index: 10;
+    overflow: scroll;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,6 +38,11 @@ body.no-scroll-modal {
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen and (max-height:610px) {
+        top: 0;
+        transform: translate(-50%);
+    }
 
     @media screen and(min-width:1170px) {
         width: 528px;

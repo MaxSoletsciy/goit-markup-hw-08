@@ -1,5 +1,5 @@
 .button {
-    display: inline-block;
+    display: block;
     padding: 10px 32px;
     margin-right: auto;
     margin-left: auto;
@@ -17,6 +17,10 @@
 
     &:hover, &:focus {
         background-color: $bg-button-hover;
+    }
+
+    @media screen and (min-width: 1199px) {
+        display: inline-block;
     }
 }
 
@@ -52,15 +56,6 @@
         }
 }
 
-.button__footer {
-    // @media screen and (min-width:1170px) {
-    //     display: inline-block;
-    // }
-
-    @media screen and (max-width:1169px) {
-        display: block;
-    }
-}
 
 .icon-menu,
 .icon-close {

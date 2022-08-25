@@ -1,5 +1,5 @@
 .subscribe {
-    @media screen and (min-width:1170px) {
+    @media screen and (min-width:1200px) {
         width: 570px;
     }
 }
@@ -10,7 +10,7 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         text-align: start;
     }
 }
@@ -39,12 +39,12 @@
         color: rgba(255, 255, 255, 0.6);
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1169px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
         width: 450px;
     }
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
         width: 358px;
     }
 }
